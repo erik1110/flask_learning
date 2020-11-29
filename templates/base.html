@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Flask讀書會-{% block title %}{% endblock %}</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/public.css') }}">
+</head>
+
+<!-- 頁面頭部訊息 -->
+<div class="header">
+    {% block header %}{% endblock %}
+</div>
+
+<!-- 頁面內容訊息 -->
+<div class="content">
+    {% block body %}{% endblock %}
+    <a href='/index'>回首頁</a>
+</div>
+<!-- 頁面內容 -->
+<div class="footer">
+  Copyright © 鬼殺隊  All Rights Reserved </div>
+</html>

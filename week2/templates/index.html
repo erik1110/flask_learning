@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+<!-- 標題訊息 -->
+{% block title %}首頁{% endblock %}
+<!-- 頁面頭部訊息 -->
+{% block header %}首頁{% endblock %}
+<!-- 頁面內容訊息 -->
+{% block body %}
+<div>
+    <p class="text1"> <img src="{{ url_for('static', filename='images/history.png') }}" width="25" height="25" align="absmiddle" /> <a href="/history">1. 創業歷史</a> </p>
+    <p class="text2"> 說明創辦者的辛酸史 </p>
+  </div>
+  <hr width="100%" />
+  <div>
+    <p class="text1"> <img src="{{ url_for('static', filename='images/member.png') }}" width="25" height="25" align="absmiddle"  /> <a href="/member">2. 研究成員</a> </p>
+    <p class="text2"> 看看俊男美女們！ </p>
+  </div>
+  <hr width="100%" />
+  <div>
+    <p class="text1"> <img src="{{ url_for('static', filename='images/admission.png') }}" width="25" height="25" align="absmiddle"  /> <a href="/admission">3. 招生專區</a> </p>
+    <p class="text2"> 等你加入！ </p>
+  </div>
+  <hr width="100%" />
+  <div>
+    <p class="text1"> <img src="{{ url_for('static', filename='images/information.png') }}" width="25" height="25" align="absmiddle"  /> <a href="/information">4. 友善連結</a> </p>
+    <p class="text2"> 提供Flask教材 </p>
+  </div>
+  <hr width="100%" />
+{% endblock %}

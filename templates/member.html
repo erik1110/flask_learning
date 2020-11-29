@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+<!-- 標題訊息 -->
+{% block title %}研究成員{% endblock %}
+<!-- 頁面頭部訊息 -->
+{% block header %}研究成員{% endblock %}
+<!-- 頁面內容訊息 -->
+{% block body %}
+<ul>
+    {% for key , value in context.items() %}
+    <div class="i-member-pic-wrap col-sm-4">
+        <a class="i-member-link">
+            <img class="i-member-pic" src="static/{{value.image}}" width="350" height="400" alt={{value.name}} title={{value.name}}>
+        </a>
+    </div>
+    <div class="i-member-profile-data-wrap col-sm-8">
+        <ul class="i-member-profile-list" data-list="profile_data" data-level="3">
+          <li class="i-member-profile-item">
+              <span class="i-member-title member-data-title-name">姓名</span>
+              <span class="i-member-value member-data-value-name">: <font>{{value.name}}</font></span>
+          </li>
+        
+          <li class="i-member-profile-item">
+              <span class="i-member-title member-data-title-age">年齡</span>
+              <span class="i-member-value member-data-value-age">: <font>{{value.age}}</font></span>
+          </li>
+        
+          <li class="i-member-profile-item">
+              <span class="i-member-title member-data-title-office-tel">興趣</span>
+              <span class="i-member-value member-data-value-office-tel">: <font>{{value.interest}}</font></span>
+          </li>
+        </ul>
+    </div>
+        <hr  width="100%" />
+    {% endfor %}
+</ul>
+
+{% endblock %}
