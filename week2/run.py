@@ -13,7 +13,7 @@ def page_history():
 @app.route('/member')
 def page_member():
     context = {
-        'person1': {'name': '炭治郎'',
+        'person1': {'name': '炭治郎',
                     'age': 15,
                     'birthday': '0714',
                     'interest': '頭槌、掃除、幫助有難人',
@@ -27,7 +27,7 @@ def page_member():
                    },
         'person3': {'name': '善逸',
                     'age': 16,
-                    'birthday': '0903'',
+                    'birthday': '0903',
                     'interest': '把妹',
                     'image':'images/person3.jpg',                   
                    },
